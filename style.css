@@ -23,8 +23,7 @@ body {
     font-family: 'M PLUS 2', sans-serif;
     font-size: 1rem;
     font-weight: 300;
-    width: 100%;
-    background-color: cyan;  
+    width: 100%; 
 }
 
 body a {
@@ -41,7 +40,7 @@ nav {
     left: 0;
     z-index: 99;
     background-color: var(--color2);
-    box-shadow: 0 3px 3px #0b0d1386;;
+    box-shadow: 0 3px 3px #0b0d1386;
 }
 
 ul {
@@ -74,6 +73,22 @@ ul a:hover {
         padding: 1.4rem;
     }
     
+}
+
+@media (max-width: 400px){
+    nav {
+        justify-content: center;
+    }
+
+    ul {
+        margin: auto;
+    }
+
+    ul a {
+        margin: auto;
+        font-size: 1rem;
+        padding: 1.4rem;
+    }
 }
 
 @media (max-width: 320px){
@@ -120,6 +135,18 @@ h1 {
     color: var(--color2);
     text-align: center;
 }
+
+@media (max-width: 400px){
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    #sub {
+        font-size: 1.4rem;
+    }
+}
+
 
 @media (max-width: 320px){
 
@@ -186,6 +213,43 @@ h2 {
         font-size: 2rem;
         margin: 4rem auto 4.8rem auto;
     }
+}
+
+@media (max-width: 400px){
+
+    #projects {
+        padding: 2.4rem 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 2rem auto 4rem auto;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 2rem;
+        width: 100%;   
+        max-width: 380px; 
+        margin: auto;
+        margin-bottom: 2rem
+    }
+
+    .thumb {
+        height: calc(100% - 2.8rem);
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .project-name {
+        color: var(--color3);
+        font-family: 'M PLUS 2', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 400;   
+        padding: 0.4rem;  
+    }
+    
 }
 
 
@@ -274,6 +338,32 @@ h3 {
     color: var(--color2);
 }
 
+@media (max-width: 400px){
+
+    #contact {
+        height: 60vh;
+        padding: 4.2rem 2rem;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+        margin: 2.2rem auto 6rem auto;
+    }
+
+    #contactdiv a {
+        padding: 2em 2em;
+        
+    }
+
+    #contactdiv a > p {
+        text-align: center; 
+        font-size: 1rem; 
+        margin: auto;
+    }
+
+
+}
+
 @media (max-width: 320px){
 
     #contact {
@@ -315,6 +405,14 @@ footer p {
 @media (max-width: 500px){
     footer p {
         text-align: center;
+    }
+}
+
+@media (max-width: 400px){
+    footer p {
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 1.6rem;
     }
 }
 
